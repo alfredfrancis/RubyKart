@@ -1,0 +1,136 @@
+<div class="head-banner">
+<div class="container">
+    <div class="top-menu right">
+    <% if current_user %> 
+    <ul> 
+      <li>Hi  <%= current_user.first_name %>!</li> 
+      <li><%= link_to "Log out", logout_path, method: "delete" %></li> 
+    </ul> 
+    <% else %> 
+    <ul> 
+      <li><%= link_to "Login", 'login' %></a></li> 
+      <li><%= link_to "Signup", 'signup' %></a></li> 
+    </ul> 
+    <% end %>       
+    </div>
+
+    <div class="logo">
+      <b> RubyKart</b>
+    </div>
+
+  </div>
+</div>
+
+
+  <div class="nav">
+  <div class="container">
+    <ul class="navbar-left">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+    </ul> <!--end navbar-left -->
+
+    <ul class="navbar-right">
+      <li><a href="#" id="cart"><i class="fa fa-shopping-cart"></i> Cart <span class="badge">3</span></a></li>
+    </ul> <!--end navbar-right -->
+  </div> <!--end container -->
+  </div>
+
+
+<div class="container">
+  <div class="shopping-cart">
+    <div class="shopping-cart-header">
+      <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">3</span>
+      <div class="shopping-cart-total">
+        <span class="lighter-text">Total:</span>
+        <span class="main-color-text">$2,229.97</span>
+      </div>
+    </div> <!--end shopping-cart-header -->
+
+    <ul class="shopping-cart-items">
+      <li class="clearfix">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item1.jpg" alt="item1" />
+        <span class="item-name">Sony DSC-RX100M III</span>
+        <span class="item-price">$849.99</span>
+        <span class="item-quantity">Quantity: 01</span>
+      </li>
+
+    </ul>
+
+    <a href="#" class="button">Checkout</a>
+  </div> <!--end shopping-cart -->
+</div> <!--end container -->
+
+<div class="products">
+  <div class="container">
+    <div class="unit-product">
+      <img src="abcd,png">
+      <h3>Product one</h3>
+      <h4>Product one is a very good product.it has many good features</h4>
+      <h3 class="price">Price : 100</h3>
+      <a href="more">More</a>
+    </div>
+        <div class="unit-product">
+      <img src="abcd,png">
+      <h3>Product one</h3>
+      <h4>Product one is a very good product.it has many good features</h4>
+      <h3 class="price">Price : 100</h3>
+      <a href="more">More</a>
+    </div>
+        <div class="unit-product">
+      <img src="abcd,png">
+      <h3>Product one</h3>
+      <h4>Product one is a very good product.it has many good features</h4>
+      <h3 class="price">Price : 100</h3>
+      <a href="more">More</a>
+    </div>
+        <div class="unit-product">
+      <img src="abcd,png">
+      <h3>Product one</h3>
+      <h4>Product one is a very good product.it has many good features</h4>
+      <h3 class="price">Price : 100</h3>
+      <a href="more">More</a>
+    </div>
+        <div class="unit-product">
+      <img src="abcd,png">
+      <h3>Product one</h3>
+      <h4>Product one is a very good product.it has many good features</h4>
+      <h3 class="price">Price : 100</h3>
+      <a href="more">More</a>
+    </div>
+        <div class="unit-product">
+      <img src="abcd,png">
+      <h3>Product one</h3>
+      <h4>Product one is a very good product.it has many good features</h4>
+      <h3 class="price">Price : 100</h3>
+      <a href="more">More</a>
+    </div>
+        <div class="unit-product">
+      <img src="abcd,png">
+      <h3>Product one</h3>
+      <h4>Product one is a very good product.it has many good features</h4>
+      <h3 class="price">Price : 100</h3>
+      <a href="more">More</a>
+    </div>
+        <div class="unit-product">
+      <img src="abcd,png">
+      <h3>Product one</h3>
+      <h4>Product one is a very good product.it has many good features</h4>
+      <h3 class="price">Price : 100</h3>
+      <a href="more">More</a>
+    </div>
+        <div class="unit-product">
+      <img src="abcd,png">
+      <h3>Product one</h3>
+      <h4>Product one is a very good product.it has many good features</h4>
+      <h3 class="price">Price : 100</h3>
+      <a href="more">More</a>
+    </div>
+        <div class="unit-product">
+      <img src="abcd,png">
+      <h3>Product one</h3>
+      <h4>Product one is a very good product.it has many good features</h4>
+      <h3 class="price">Price : 100</h3>
+      <a href="more">More</a>
+    </div>
+  </div>
+</div>
