@@ -26,7 +26,7 @@
   <div class="container">
     <ul class="navbar-left">
     <% @categories.each do |category| %>
-      <li><%= link_to category.name, root_path(category_id: category) %></li>
+      <li><%= link_to category.name, products_path(category_id: category) %></li>
       <% end %>
     </ul> <!--end navbar-left -->
 

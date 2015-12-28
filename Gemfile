@@ -27,6 +27,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7'
 gem 'rails_admin', '~> 0.8.1'
 gem 'pry-rails', '~> 0.3.4'
+gem 'paperclip', '~> 4.3', '>= 4.3.2'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
