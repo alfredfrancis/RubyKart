@@ -66,10 +66,9 @@
   <% @products.each do |product| %>
     <div class="unit-product">
       <img src="abcd,png">
-      <h3>Product one</h3>
-      <h4>Product one is a very good product.it has many good features</h4>
-      <h3 class="price">Price : 100</h3>
-      <a href="more">More</a>
+      <h3><%= product.name %></h3>
+      <h3 class="price">Price : <%= product.price %></h3>
+      <%= link_to 'More', product_path(product) %>
     </div>
     <% end %>
   </div>

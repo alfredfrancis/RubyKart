@@ -110,6 +110,7 @@ body {
 }
 
 .shopping-cart {
+  display: none;
   margin: 20px 0;
   float: right;
   background: white;
