@@ -25,8 +25,9 @@
   <div class="nav">
   <div class="container">
     <ul class="navbar-left">
-      <li><a href="#">Home</a></li>
-      <li><a href="#about">About</a></li>
+    <% @categories.each do |categery| %>
+      <li><a href="#"><%= categery.name %></a></li>
+      <% end %>
     </ul> <!--end navbar-left -->
 
     <ul class="navbar-right">
@@ -69,68 +70,6 @@
       <h3 class="price">Price : 100</h3>
       <a href="more">More</a>
     </div>
-        <div class="unit-product">
-      <img src="abcd,png">
-      <h3>Product one</h3>
-      <h4>Product one is a very good product.it has many good features</h4>
-      <h3 class="price">Price : 100</h3>
-      <a href="more">More</a>
-    </div>
-        <div class="unit-product">
-      <img src="abcd,png">
-      <h3>Product one</h3>
-      <h4>Product one is a very good product.it has many good features</h4>
-      <h3 class="price">Price : 100</h3>
-      <a href="more">More</a>
-    </div>
-        <div class="unit-product">
-      <img src="abcd,png">
-      <h3>Product one</h3>
-      <h4>Product one is a very good product.it has many good features</h4>
-      <h3 class="price">Price : 100</h3>
-      <a href="more">More</a>
-    </div>
-        <div class="unit-product">
-      <img src="abcd,png">
-      <h3>Product one</h3>
-      <h4>Product one is a very good product.it has many good features</h4>
-      <h3 class="price">Price : 100</h3>
-      <a href="more">More</a>
-    </div>
-        <div class="unit-product">
-      <img src="abcd,png">
-      <h3>Product one</h3>
-      <h4>Product one is a very good product.it has many good features</h4>
-      <h3 class="price">Price : 100</h3>
-      <a href="more">More</a>
-    </div>
-        <div class="unit-product">
-      <img src="abcd,png">
-      <h3>Product one</h3>
-      <h4>Product one is a very good product.it has many good features</h4>
-      <h3 class="price">Price : 100</h3>
-      <a href="more">More</a>
-    </div>
-        <div class="unit-product">
-      <img src="abcd,png">
-      <h3>Product one</h3>
-      <h4>Product one is a very good product.it has many good features</h4>
-      <h3 class="price">Price : 100</h3>
-      <a href="more">More</a>
-    </div>
-        <div class="unit-product">
-      <img src="abcd,png">
-      <h3>Product one</h3>
-      <h4>Product one is a very good product.it has many good features</h4>
-      <h3 class="price">Price : 100</h3>
-      <a href="more">More</a>
-    </div>
-        <div class="unit-product">
-      <img src="abcd,png">
-      <h3>Product one</h3>
-      <h4>Product one is a very good product.it has many good features</h4>
-      <h3 class="price">Price : 100</h3>
-      <a href="more">More</a>
-    </div>
+
   </div>
 </div>
