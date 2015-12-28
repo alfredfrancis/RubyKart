@@ -20,8 +20,14 @@
 
 
   
-$(document).ready(function() {
-	$("#cart").on("click", function() {
+// $(document).ready(function() {
+// 	$("#cart").on("click", function() {
+// 		$(".shopping-cart").fadeToggle("fast");
+// 	});
+// });
+
+$(document).on('ready page:load', function () {
+  $("#cart").on("click", function() {
 		$(".shopping-cart").fadeToggle("fast");
 	});
 });

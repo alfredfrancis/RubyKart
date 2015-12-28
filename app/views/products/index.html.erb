@@ -25,8 +25,8 @@
   <div class="nav">
   <div class="container">
     <ul class="navbar-left">
-    <% @categories.each do |categery| %>
-      <li><a href="#"><%= categery.name %></a></li>
+    <% @categories.each do |category| %>
+      <li><%= link_to category.name, root_path(category_id: category) %></li>
       <% end %>
     </ul> <!--end navbar-left -->
 
@@ -63,6 +63,7 @@
 
 <div class="products">
   <div class="container">
+  <% @products.each do |product| %>
     <div class="unit-product">
       <img src="abcd,png">
       <h3>Product one</h3>
@@ -70,6 +71,6 @@
       <h3 class="price">Price : 100</h3>
       <a href="more">More</a>
     </div>
-
+    <% end %>
   </div>
 </div>
