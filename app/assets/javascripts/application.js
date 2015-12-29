@@ -34,7 +34,8 @@ $(document).on('ready page:load', function () {
 
 
 	$('.add-to-cart').bind('ajax:success', function(){
-	  alert("Success!");
+	  alert("Added to cart!");
+
 	});
 
 });

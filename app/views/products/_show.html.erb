@@ -1,17 +1,19 @@
 <div class="products">
   <div class="container">
     <div class="detailed-product">
-      <img src="abcd,png">
-      <h3><%= @product.name %></h3>
-      <h4><%= @product.desc %></h4>
-      <h5 class="price">Price : <b><%= @product.price %><b></h3>
-      <% if(!current_user) %>
-      <h2 style="color:red">login to buy </h2>
-      <% else %>
-      <%=
-       button_to 'Add to cart',cart_index_path(product_id: @product.id ), class: "btn-submit",:method => :post,:form => { :class => "add-to-cart" }, :remote => :true
-       %> 
-       <% end %>
+      <%= image_tag @product.image.url %>
+      <div class="right-block">
+        <h3><%= @product.name %></h3>
+        <h4><%= @product.desc %></h4>
+        <h5 class="price">Price : <b><%= @product.price %></b></h3>
+        <% if(!current_user) %>
+        <h2 style="color:red">login to buy </h2>
+        <% else %>
+        <%=
+         button_to 'Add to cart',cart_index_path(product_id: @product.id ), class: "btn-submit",:method => :post,:form => { :class => "add-to-cart" }, :remote => :true
+         %> 
+         <% end %>
+         </div>
     </div>
   </div>
 </div>

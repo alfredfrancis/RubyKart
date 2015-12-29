@@ -2,7 +2,7 @@
   <div class="container">
   <% @products.each do |product| %>
     <div class="unit-product">
-      <img src="abcd,png">
+      <%= image_tag product.image.url(:thumb),:styles => { :small => "160x160" } %>
       <h3><%= product.name %></h3>
       <h3 class="price">Price : <%= product.price %></h3>
       <%= link_to 'More', product_path(product) %>

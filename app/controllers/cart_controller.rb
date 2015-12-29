@@ -14,6 +14,7 @@ class CartController < ApplicationController
 		else
 			render plain: "error"
 		end
+
 	end
 
 	def destroy
