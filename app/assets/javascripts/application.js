@@ -27,7 +27,15 @@
 // });
 
 $(document).on('ready page:load', function () {
+	
   $("#cart").on("click", function() {
 		$(".shopping-cart").fadeToggle("fast");
 	});
+
+
+	$('.add-to-cart').bind('ajax:success', function(){
+	  alert("Success!");
+	});
+
 });
+

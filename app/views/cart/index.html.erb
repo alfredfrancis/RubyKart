@@ -1,0 +1,31 @@
+
+  <%= render partial: "products/header" %>
+<div class="container">
+  <div class="shopping-cart">
+    <div class="shopping-cart-header">
+      <i class="fa fa-shopping-cart cart-icon"></i><span class="badge"><%= @cart_items.count %></span>
+      <div class="shopping-cart-total">
+        <span class="lighter-text">Total:</span>
+        <%
+          sum=0
+          @cart_items.each {|c_item| sum += c_item.product.price * c_item.nos}
+        %>
+        <span class="main-color-text"><%= sum %></span>
+      </div>
+    </div> <!--end shopping-cart-header -->
+
+    <% @cart_items.each do |cart_item| %>
+    <ul class="shopping-cart-items">
+      <li class="clearfix">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item1.jpg" alt="item1" />
+        <span class="item-name"><%= cart_item.product.name %></span>
+        <span class="item-price"><%= cart_item.product.price %></span>
+        <span class="item-quantity">Quantity: <%= cart_item.nos %></span>
+        <%= link_to 'Remove', cart_path(cart_item), method: :delete, data: { confirm: 'Are you sure?'} %>
+      </li>
+    </ul>
+
+    <% end %>
+    <a href="#" class="button">Checkout</a>
+  </div> <!--end shopping-cart -->
+</div> <!--end container -->

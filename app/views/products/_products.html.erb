@@ -1,0 +1,12 @@
+<div class="products">
+  <div class="container">
+  <% @products.each do |product| %>
+    <div class="unit-product">
+      <img src="abcd,png">
+      <h3><%= product.name %></h3>
+      <h3 class="price">Price : <%= product.price %></h3>
+      <%= link_to 'More', product_path(product) %>
+    </div>
+    <% end %>
+  </div>
+</div>

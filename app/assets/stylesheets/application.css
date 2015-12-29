@@ -1,4 +1,4 @@
-/*
+/*/*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
@@ -109,108 +109,6 @@ body {
   white-space: nowrap;
 }
 
-.shopping-cart {
-  display: none;
-  margin: 20px 0;
-  float: right;
-  background: white;
-  width: 320px;
-  position: relative;
-  border-radius: 3px;
-  padding: 20px;
-  z-index: 10;
-}
-.shopping-cart .shopping-cart-header {
-  border-bottom: 1px solid #E8E8E8;
-  padding-bottom: 15px;
-}
-.shopping-cart .shopping-cart-header .shopping-cart-total {
-  float: right;
-}
-.shopping-cart .shopping-cart-items {
-  padding-top: 20px;
-}
-.shopping-cart .shopping-cart-items li {
-  margin-bottom: 18px;
-}
-.shopping-cart .shopping-cart-items img {
-  float: left;
-  margin-right: 12px;
-}
-.shopping-cart .shopping-cart-items .item-name {
-  display: block;
-  padding-top: 10px;
-  font-size: 16px;
-}
-.shopping-cart .shopping-cart-items .item-price {
-  color: #6394F8;
-  margin-right: 8px;
-}
-.shopping-cart .shopping-cart-items .item-quantity {
-  color: #ABB0BE;
-}
-
-.shopping-cart:after {
-  bottom: 100%;
-  left: 89%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-bottom-color: white;
-  border-width: 8px;
-  margin-left: -8px;
-}
-
-.cart-icon {
-  color: #515783;
-  font-size: 24px;
-  margin-right: 7px;
-  float: left;
-}
-
-.button {
-  background: #6394F8;
-  color: white;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  display: block;
-  border-radius: 3px;
-  font-size: 16px;
-  margin: 25px 0 15px 0;
-}
-.button:hover {
-  background: #729ef9;
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* products */
-
-.products{
-
-}
-
-.products .unit-product{
-  padding: 5px;
-  text-align: center;
-  display: inline-block;  
- height: 170px;  
- width: 200px;  
- border: 1px solid #585858 ;
- border-radius: 6px;  
- margin: 10px 10px 10px 10px; 
-}
-
-
-
 
 /* FORM PAGES */
 
@@ -244,3 +142,4 @@ input[type=password] {
   border: 0;
   margin-top: 6px;
 }
+*/
