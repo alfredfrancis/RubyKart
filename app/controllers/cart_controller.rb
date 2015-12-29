@@ -1,5 +1,5 @@
 class CartController < ApplicationController
-
+	before_action :require_user #, only: [:new, :edit]
 	def index
 		@cart_items = current_user.shoppingkarts 
 		#Shoppingkart.find(current_user)

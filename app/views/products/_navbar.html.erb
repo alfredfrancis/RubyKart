@@ -7,7 +7,7 @@
     </ul> <!--end navbar-left -->
 
     <ul class="navbar-right">
-      <li><a href="<%= cart_index_path %>" id="cart"><i class="fa fa-shopping-cart"></i> Cart <span class="badge"><%= current_user.shoppingkarts.count %></span></a></li>
+      <li><a href="<%= cart_index_path %>" id="cart"><i class="fa fa-shopping-cart"></i> Cart <span class="badge"><%= if(session[:user_id]) then current_user.shoppingkarts.count else '' end %></span></a></li>
     </ul> <!--end navbar-right -->
   </div> <!--end container -->
   </div>

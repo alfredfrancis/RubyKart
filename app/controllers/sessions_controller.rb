@@ -13,6 +13,7 @@ class SessionsController < ApplicationController
 	  	end 
 	end
 	def destroy 
+		current_user.shoppingkarts.delete_all
     	session[:user_id] = nil 
     	redirect_to '/' 
 	end
