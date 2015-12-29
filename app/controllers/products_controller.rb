@@ -4,7 +4,7 @@ class ProductsController < ApplicationController
 		if(params[:category_id])
 			@products = Product.where(category: params[:category_id])
 		else	
-			@products = Product.last(5)
+			@products = Product.last(7)
 		end
 	end
 

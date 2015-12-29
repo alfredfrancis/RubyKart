@@ -40,6 +40,11 @@ body {
   background: #027cd5;
 
 }
+.head-banner a {
+  color: #fff;
+  text-decoration: none;
+
+}
 .head-banner .logo {
   clear:both;
 
