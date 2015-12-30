@@ -26,6 +26,6 @@
     </ul>
 
     <% end %>
-    <a href="#" class="button">Checkout</a>
+    <%= link_to 'Checkout', order_index_path(:total => sum) ,:method => :post,:class=>"button"%>
   </div> <!--end shopping-cart -->
 </div> <!--end container -->

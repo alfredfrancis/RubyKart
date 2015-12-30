@@ -1,0 +1,13 @@
+
+.payment-panel{
+	text-align:center;
+	padding:100px;
+}
+
+.payment-panel .payment-submit {
+  color: #FFFFFF;
+  font-size: 18px;
+  text-transform: uppercase;
+  background: green;
+  border: 0;
+}

@@ -1,0 +1,10 @@
+  <%= render partial: "products/header" %>
+
+<div class="payment-panel">
+	<div class="container">
+
+			<b> Total amount : <%= params[:total] %></b><br>
+			<%= link_to 'Pay', payment_index_path() ,:method => :post,:class=>"payment-submit"%>
+
+	</div>
+</div>

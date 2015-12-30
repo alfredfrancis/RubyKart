@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151229125540) do
+ActiveRecord::Schema.define(version: 20151230065634) do
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"
@@ -19,6 +19,39 @@ ActiveRecord::Schema.define(version: 20151229125540) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
+
+  create_table "order_details", force: :cascade do |t|
+    t.integer  "order_id"
+    t.integer  "product_id"
+    t.integer  "nos"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "order_details", ["order_id"], name: "index_order_details_on_order_id"
+  add_index "order_details", ["product_id"], name: "index_order_details_on_product_id"
+
+  create_table "orders", force: :cascade do |t|
+    t.integer  "user_id"
+    t.boolean  "status"
+    t.decimal  "total"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "payment_id"
+  end
+
+  add_index "orders", ["payment_id"], name: "index_orders_on_payment_id"
+  add_index "orders", ["user_id"], name: "index_orders_on_user_id"
+
+  create_table "payments", force: :cascade do |t|
+    t.integer  "order_id"
+    t.decimal  "amount"
+    t.boolean  "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "payments", ["order_id"], name: "index_payments_on_order_id"
 
   create_table "products", force: :cascade do |t|
     t.string   "name"
