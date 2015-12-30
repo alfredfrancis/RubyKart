@@ -3,8 +3,8 @@
 <div class="payment-panel">
 	<div class="container">
 
-			<b> Total amount : <%= params[:total] %></b><br>
-			<%= link_to 'Pay', payment_index_path() ,:method => :post,:class=>"payment-submit"%>
+			<b> Total amount : <%= Order.find(session[:order_id]).total %></b><br>
+			<%= link_to 'Pay', payment_index_path ,:method => :post,:class=>"payment-submit"%>
 
 	</div>
 </div>
